@@ -19,7 +19,7 @@ In order to run the Jupyter notebooks for this tutorial, you need to have Python
 
 Make sure you select the _Add Python 3.8 to PATH_ option during installation:
 
-<img src=".images/python-inst-win-path.png" width="500px">
+![](.images/python-inst-win-path.png)
 
 ### MacOS
 * https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg
