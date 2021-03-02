@@ -1,8 +1,8 @@
 # Introduction to Jupyter Notebooks
 
 This repository contains a tutorial on how to use Python and
-[Jupyter](https://jupyterlab.readthedocs.io/en/stable/) notebooks for
-interactive computing. The tutorials are written in JupyterLab notebooks
+[Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) for
+interactive computing. The tutorials are written in Jupyter notebooks
 themselves, so if you want to follow along, it is recommended to [install
 JupyterLab locally](#Installation).
 
@@ -20,6 +20,16 @@ In order to run the Jupyter notebooks for this tutorial, you need to have Python
 Make sure you select the _Add Python 3.8 to PATH_ option during installation:
 
 ![](images/python-inst-win-path.png)
+
+Note: this will _prepend_ the Python 3.8 paths to your `PATH`, i.e. it will
+essentially become the default Python version inside the shell. For example,
+when running a script from the command line with `python my_script.py`, the
+directories in `PATH` will be searched for the `python` executable and the
+first hit is used.
+
+In case you have a different Python version installed and depend on it being the default, you might want to change the order of your `PATH` entries (Windows Key > Edit the System Environment Veriables > Environment Variables... > Edit your User _Path_ variable), e.g.
+
+![](images/python-path-order.png)
 
 ### MacOS
 * https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg
