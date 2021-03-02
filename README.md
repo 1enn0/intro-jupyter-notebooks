@@ -39,20 +39,18 @@ In case you have a different Python version installed and depend on it being the
 
 ## Python Virtual Environments
 
-We will be creating a virtual environment (see
-[here](https://realpython.com/python-virtual-environments-a-primer/) for more
-info) for this tutorial to make sure we are not braking any of your existing
-Python installations. For this, we will be using a tool called `pipenv`.
+In order not to break any of your existing Python installations, we will be
+creating a virtual environment for this tutorial using a tool called
+`pipenv`.
 
-### Install `pipenv`
-
-`pipenv` is just another Python  package, so you can install it by running
+`pipenv` is a Python package itself, so you can install it into your Python
+3.8 distribution by running
 
 ```
-pip install pipenv
+pip3.8 install pipenv
 ```
 
-in a terminal.
+in a terminal. 
 
 ### Create Virtual Environment
 
