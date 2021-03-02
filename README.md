@@ -10,6 +10,8 @@ If you just want to play around a bit, there are hosted online versions which yo
 here](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/3818244?urlpath=lab/tree/demo).
 
 
+---
+
 ## Installation
 
 In order to run the Jupyter notebooks for this tutorial, you need to have Python 3.8 installed. If you do not have it installed, download it here:
@@ -41,14 +43,14 @@ Variables... > Edit your User _Path_ variable), e.g.
 * use your distribution's package manager to install Python 3.8 (search for `python3.8`, `python38`, ...)
 * run `python3.8 -m ensurepip --user` to ensure you have the corresponding pip version installed
 
+---
+
 ## Python Virtual Environments
 
 In order not to break any of your existing Python installations, we will be
 creating a virtual environment for this tutorial using a tool called
-`pipenv`.
-
-`pipenv` is a Python package itself, so you can install it into your Python
-3.8 distribution by running
+`pipenv`. `pipenv` is just a Python package itself, so you can install it
+into your Python 3.8 distribution by running
 
 ```
 pip3.8 install pipenv
@@ -56,31 +58,41 @@ pip3.8 install pipenv
 
 in a terminal. 
 
-### Create Virtual Environment
-
 In the `pipenv` world, virtual environments are _project-based_. The
-information about the environment (required Python version, dependencies, ...) is
-stored in a text file called _Pipfile_ within the project directory.
+information about the environment (required Python version, dependencies,
+...) is stored in a text file (_Pipfile_) within the project directory.
 
-To create the virtual environment for this tutorial, **make sure you are in the directory of this repository** and run
+To create the virtual environment for this tutorial, **make sure you are in
+the directory of this repository** and run
 
 ```
 pipenv install
 ```
 
-This will look for the _Pipfile_, create a new virtual environment using the
-required Python version and install all package dependencies.
+This will create a new virtual environment using the correct Python version
+and install all package dependencies.
 
-After the installation is completed, there are basically two ways to interact with your new environment:
+Once the environment is successfully created, there are basically two ways to interact with it:
 * `pipenv run`: run a given command inside the virtualenv
 * `pipenv shell`: spawn a subshell with the virtualenv activated (can be deactivated with `exit`)
 
-## Start JupyterLab
+Note that these commands should always be executed from within the project
+directory (i.e. the directory that contains the Pipfile).
 
-Finally, start JupyterLab inside of your new virtual environment with
+---
+
+## Start JupyterLab and Run Your First Notebook
+
+Finally, start the JupyterLab server inside of your new virtual environment with
 
 ```
 pipenv run jupyter lab
 ```
 
-This should automatically open up a new tab in your default browser, presenting you the JupyterLab start page. You can ignore the terminal window from now on, it's just the server running in the background.
+This will start an instance of the Juypter server and automatically open up
+the JupyterLab start page in your browser. We will only be interacting with
+the browser front-end from now on but you need to leave the server running in
+the background.
+
+Using the file browser in the left pane, navigate into the `notebooks/`
+directory and open up the `0_notebooks.ipynb` file.
