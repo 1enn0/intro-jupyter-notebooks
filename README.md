@@ -1,20 +1,25 @@
 # Introduction to Jupyter Notebooks
 
-This repository contains a tutorial on how to use Python and
-[Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) for
-interactive computing. The tutorials are written in Jupyter notebooks
-themselves, so if you want to follow along, it is recommended to [install
-JupyterLab locally](#Installation).
+This repository contains a tutorial on how to use Python and [Jupyter
+notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html)
+for interactive computing. 
 
-If you just want to play around a bit, there are hosted online versions which you can [try out
-here](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/3818244?urlpath=lab/tree/demo).
-
+The tutorials are written in Jupyter notebooks themselves. If you want to
+follow along, there are two options:
+* local installation: follow [Installation](#Installation) instructions
+* run the notebooks in [Colab](https://colab.research.google.com/), a free notebook hosting service by Google. You need to sign in using your Google account and select "File > Open Notebook > GitHub" and enter the URL https://github.com/1enn0/intro-jupyter-notebooks
 
 ---
 
-## Installation
+## Prerequisites
 
-In order to run the Jupyter notebooks for this tutorial, you need to have Python 3.8 installed. If you do not have it installed, download it here:
+Nothing, really. Maybe some _basic_ knowledge of Python.
+
+---
+
+## Local Installation
+
+In order to run the Jupyter notebooks locally, you need to have Python 3.8 installed. If you do not have it installed, download it here:
 
 ### Windows
 * https://www.python.org/ftp/python/3.8.6/python-3.8.6-amd64.exe
