@@ -21,13 +21,16 @@ Make sure you select the _Add Python 3.8 to PATH_ option during installation:
 
 ![](images/python-inst-win-path.png)
 
-Note: this will _prepend_ the Python 3.8 paths to your `PATH`, i.e. it will
-essentially become the default Python version inside the shell. For example,
-when running a script from the command line with `python my_script.py`, the
+Note: this will _prepend_ the Python 3.8 paths to your `PATH`, i.e. this will
+essentially become the default Python version inside your shell. For example,
+when you run a script from the command line with `python my_script.py`, the
 directories in `PATH` will be searched for the `python` executable and the
-first hit is used.
+first match is used.
 
-In case you have a different Python version installed and depend on it being the default, you might want to change the order of your `PATH` entries (Windows Key > Edit the System Environment Veriables > Environment Variables... > Edit your User _Path_ variable), e.g.
+In case you have a different Python version installed and depend on it being
+the default, you might want to change the order of your `PATH` entries
+(Windows Key > Edit the System Environment Veriables > Environment
+Variables... > Edit your User _Path_ variable), e.g.
 
 ![](images/python-path-order.png)
 
@@ -35,7 +38,8 @@ In case you have a different Python version installed and depend on it being the
 * https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg
 
 ### Linux
-* Use your distribution's package manager (search for `python3.8`, `python38`, ...)
+* use your distribution's package manager to install Python 3.8 (search for `python3.8`, `python38`, ...)
+* run `python3.8 -m ensurepip --user` to ensure you have the corresponding pip version installed
 
 ## Python Virtual Environments
 
