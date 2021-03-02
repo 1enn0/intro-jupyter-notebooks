@@ -19,7 +19,7 @@ In order to run the Jupyter notebooks for this tutorial, you need to have Python
 
 Make sure you select the _Add Python 3.8 to PATH_ option during installation:
 
-![](.images/python-inst-win-path.png)
+![](images/python-inst-win-path.png)
 
 ### MacOS
 * https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg
@@ -57,7 +57,7 @@ pipenv install
 ```
 
 This will look for the _Pipfile_, create a new virtual environment using the
-specified Python version and install all package dependencies.
+required Python version and install all package dependencies.
 
 After the installation is completed, there are basically two ways to interact with your new environment:
 * `pipenv run`: run a given command inside the virtualenv

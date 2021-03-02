@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "3.0.9"
+matplotlib = "3.3.4"
+librosa = "0.8.0"
+ipympl = "0.6.3"
+ipywidgets = "7.6.3"
+voila = "0.2.7"
+nbconvert = "6.0.7"
+pandas = "1.2.2"
+numpy = "1.20.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
